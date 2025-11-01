@@ -6,7 +6,7 @@
     <form class="bg-light pt-4">
       <div class="row">
         <div class="col-2">
-          <input @keyup="evento => estado.numero1 = evento.target.value" type="number" v-model.number="num1" placeholder="1° numero" class="form-control text-center">
+          <input type="number" v-model.number="num1" placeholder="1° numero" class="form-control text-center">
         </div>
         <div class="col-3">
           <select v-model="operacao" class="form-control bg-secondary text-light text-center m-0">
@@ -17,7 +17,7 @@
           </select>
         </div>
         <div class="col-2">
-          <input @keyup="evento => estado.numero2 = evento.target.value" type="number" v-model.number="num2" placeholder="2° numero" class="form-control text-center">
+          <input type="number" v-model.number="num2" placeholder="2° numero" class="form-control text-center">
         </div>
         <div class="col-2 d-inline align-content-center text-end">
           <b>RESULTADO:</b>
